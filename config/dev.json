@@ -1,0 +1,11 @@
+{
+    "influxdb": {
+        "name": "SportEvents",
+        "address": "http://influxdb:8086",
+        "timeout": 1
+    },
+    "restServer": {
+        "address": "localhost:8082",
+        "tls": false
+    }
+}

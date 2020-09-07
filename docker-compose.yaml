@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  influxdb:
+    image: "influxdb:latest"
+    restart: unless-stopped
+    ports:
+      - "8086:8086"
+
+  sportevents:
+    build:
+      context: .
+      dockerfile: cmd/server/Dockerfile
+    restart: always
+    ports:
+      - "8082:8082"
